@@ -1,0 +1,7 @@
+# Project exclude paths
+/cache/
+/data/
+/dataset/
+/models/
+/models/swin-tiny-complete/
+/results/
