@@ -108,16 +108,6 @@ pip install -r requirements.txt
 - **Training Strategy**: Epoch-based, gradient accumulation, learning rate warmup
 - **Evaluation**: Runs at each epoch end, logs best model by accuracy
 
-## Metrics Logged
-
-- **F1 Score (macro)**
-- **Precision**
-- **Recall**
-- **Accuracy**
-
-Metrics are saved under:
-- `results/swin-tiny-complete/`
-- `models/swin-tiny-complete/`
 
 ## Notes
 
