@@ -1,6 +1,5 @@
-# Swin Transformer Image Classification Pipeline
-
-## 📘 Overview
+# Detection of deepfakes using SWIN Transformer
+## Description
 
 This project implements an end-to-end image classification pipeline for detecting real and manipulated (deepfake) images using the Swin Transformer (`swin-tiny`) architecture from Hugging Face Transformers. It includes dataset preparation, training, evaluation, and a simple Gradio-based inference interface.
 
@@ -11,7 +10,7 @@ The model is trained to classify images into multiple categories including:
 - `FaceSwap`
 - `NeuralTextures`
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── image_extractor.py             # Extracts frames from video datasets and creates train/test splits
@@ -24,7 +23,7 @@ The model is trained to classify images into multiple categories including:
 ├── cache/                        # Cache for Hugging Face datasets
 ```
 
-## 🚀 Features
+## Features
 
 - **Frame Extraction**: Convert deepfake videos into frames and split into train/test.
 - **Multi-class Classification**: Classifies real vs various types of manipulated media.
@@ -32,7 +31,7 @@ The model is trained to classify images into multiple categories including:
 - **Evaluation Metrics**: Computes F1 Score, Precision, Recall, and Accuracy.
 - **Gradio UI**: Includes a basic interactive web interface (demo placeholder).
 
-## 📸 Dataset Format
+## Dataset Format
 
 This project assumes a Deepfake Detection dataset structure similar to:
 
@@ -46,7 +45,7 @@ dataset/
 │   └── NeuralTextures/
 ```
 
-## 🛠️ Usage
+## Usage
 
 ### 1. Frame Extraction & Dataset Preparation
 
@@ -87,7 +86,7 @@ python gradio-test.py
 - A basic "Hello, name!" demo using Gradio.
 - Replace with an image classifier interface if needed.
 
-## 📦 Requirements
+## Requirements
 
 Install required dependencies:
 
@@ -102,14 +101,14 @@ pip install -r requirements.txt
 - Gradio
 - `evaluate` for metric computation
 
-## 🧠 Model Details
+## Model Details
 
 - **Architecture**: Swin-Tiny Transformer
 - **Input Size**: 224 x 224 RGB images
 - **Training Strategy**: Epoch-based, gradient accumulation, learning rate warmup
 - **Evaluation**: Runs at each epoch end, logs best model by accuracy
 
-## 📊 Metrics Logged
+## Metrics Logged
 
 - **F1 Score (macro)**
 - **Precision**
@@ -120,7 +119,7 @@ Metrics are saved under:
 - `results/swin-tiny-complete/`
 - `models/swin-tiny-complete/`
 
-## 📌 Notes
+## Notes
 
 - All video decoding, resizing, and augmentation handled with OpenCV and Hugging Face APIs.
 - Gradio UI is a placeholder and should be extended for real image classification demos.
