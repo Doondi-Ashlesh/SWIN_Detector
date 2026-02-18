@@ -4,7 +4,7 @@
 This project implements an end-to-end image classification pipeline for detecting real and manipulated (deepfake) images using the Swin Transformer (`swin-tiny`) architecture from Hugging Face Transformers. It includes dataset preparation, training, evaluation, and a simple Gradio-based inference interface.
 
 The model is trained to classify images into multiple categories including:
-- `real`
+- `Real`
 - `Deepfakes`
 - `Face2Face`
 - `FaceSwap`
